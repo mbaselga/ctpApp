@@ -169,10 +169,53 @@ margin-top: 10px;
 
 .mystats{
 background-color: white;
-height:900px;
+height:1600px;
 position: relative;
 width:100%;
+font-size:40pt;
+color:black;
 }
+
+.consumption,.bar-segment{
+
+    text-align: center;
+font-size: 38pt;
+clear:both;
+    padding:60px;
+
+}
+
+.bar-segment{margin-top:50px;}
+
+.consumption-mg{
+    font-size:84pt;
+    text-transform: lowercase;
+    line-height:160%;
+    color:  #419889;
+
+}
+.consumption-text{margin-bottom: 40px;}
+#max-caffeine-intake, .greybar{
+    margin:0 auto;
+    height: 35px;
+    width:95%;
+    background-color: #CCC;
+
+
+}
+
+#today-caffeine-intake, #time-left, #productivity, #sleep{
+    float:left;
+    height: 35px;
+    background-color: red;
+    width:20%;
+}
+
+.lastdrink{
+    width:100%;
+    padding:20px;
+}
+
 
 .tab{width: 31%;
 float:left;
@@ -202,7 +245,8 @@ color:black;
 .navbar{background-color: #333333;
 height:120px;
 color:white;
-font-size:20pt;
+font-size:18pt;
+width:100%;
 line-height: 120px;
 }
 
@@ -221,7 +265,29 @@ font-size:30pt;
 
 }
 
-.mystats{
 
-    color:black;
+.lastdrink{font-size:20pt;
+background-color: rgba(65,152,137, .5);
+height:auto;
+float:left;
 }
+
+.last-drink-time{
+
+    float:left;
+    border-right: 1px solid #111;
+    width:17%;
+    padding-right:2%;
+}
+
+.last-drink-name{float:left;
+width:70%;
+padding-left: 5%;
+padding-right:5%;
+}
+
+.bar-label{text-align: left;
+font-size: 24pt;
+margin-left: 2.5%;
+}
+
