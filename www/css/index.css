@@ -28,7 +28,7 @@ body {
     color:white;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:20px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -39,14 +39,15 @@ body {
 /* Portrait layout (default) */
 .app {
     background: black; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
+/*    position:absolute;              position in the center of the screen 
     left:50%;
-    top:20%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    top:20%;*/
+    height:100%;                   /* text area height */
+    width:90%;                   /* text area width */
     text-align: center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+    margin: 20px auto;
+/*    padding:180px 0px 0px 0px;      image height is 200px (bottom 20px are overlapped with text) 
+    margin:-115px 0px 0px -112px;  *//* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
 
@@ -54,16 +55,16 @@ body {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+      /*  padding:75px 0px 75px 170px; */ /* padding-top + padding-bottom + text area = image height */
+       /* margin:-90px 0px 0px -198px;  /*/* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
 }
 
 h1 {
-    font-size:22px;
+    font-size:46pt;
 
-    font-weight:500;
+    font-weight:600;
     margin:0px;
     overflow:visible;
     padding:4px;
@@ -71,7 +72,7 @@ h1 {
 }
 
 h2{
-    font-size:11pt;
+    font-size:28pt;
     font-weight:400;
     margin:0px;
     overflow:visible;
@@ -118,29 +119,30 @@ h2{
 
 /*CUSTOMIZE CSS STARTS*/
 
-#logo{padding:10px;
+#logo{padding:50px;
 margin: 0 auto;
 text-align: center;
 }
 
 form{text-align: left;
 margin: 0 auto;
-font-size:14pt;
+font-size:25pt;
 }
 
 input{width:100%;
 height:24px;
-margin-bottom:10px;
+margin-bottom:50px;
 border-radius: 3px;
+ height:90px;
 border:1px solid #ccc;
 }
 
 input[type=submit]{
     background-color: #419889;
     padding:3px;
-    margin-top:5px;
-    height:40px;
-    font-size:15pt;
+    margin-top:20px;
+    height:90px;
+    font-size:20pt;
     color: #FFFFFF;
 }
 
@@ -156,8 +158,8 @@ font-size:14pt;
 }
 
 select{width: 100%;
-font-size: 22pt;
-height:40px;
+font-size: 26pt;
+height:90px;
 border:none;
 margin-top: 10px;
 
@@ -167,7 +169,7 @@ margin-top: 10px;
 
 .mystats{
 background-color: white;
-height:100%;
+height:900px;
 position: relative;
 width:100%;
 }
@@ -180,33 +182,42 @@ border-right:1px solid black;
 }
 
 .topbar{
-    height:46px;
+    height:120px;
     color: black;
+    font-size:40pt;
     padding-left: 10px;
-    line-height: 46px;
+    line-height: 120px;
 }
 
-.add{float:right;
-margin-right: 5px;
+.add{
+float:right;
+    padding-left:20px;
+    padding-right:20px;
 
-font-size:14pt;
+font-size:20pt;
+background-color: #419889;
 color:black;
 
 }
 .navbar{background-color: #333333;
-height:50px;
+height:120px;
 color:white;
-line-height: 50px;
+font-size:20pt;
+line-height: 120px;
 }
 
-a{color: white;}
+a{color: white;
+
+text-decoration: none;
+}
 
 
 /*Recommendations*/
 .recommendation{
 text-align: center;
 margin:10px;
-margin-top:40px;
+margin-top:70px;
+font-size:30pt;
 
 }
 
